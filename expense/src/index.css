@@ -1,18 +1,129 @@
+/* ===== Global Reset ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== Body ===== */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+
+  background-color: #faf7f2; /* warm white */
+  color: #3e2c1c; /* dark brown text */
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ===== Headings ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2f1e12; /* slightly darker brown */
+  margin: 0;
+}
+
+/* ===== Links ===== */
+a {
+  text-decoration: none;
+  color: #6f4e37; /* coffee brown */
+  font-weight: 500;
+}
+
+a:hover {
+  color: #4b2e1a; /* darker brown */
+}
+
+/* ===== Buttons ===== */
+button {
+  background-color: #6f4e37;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #4b2e1a;
+}
+
+/* ===== Inputs & Select ===== */
+input,
+select,
+textarea {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #d6c5b4;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #3e2c1c;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6f4e37;
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  background-color: #f0e6db;
+  color: #2f1e12;
+  font-weight: 600;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee2d6;
+}
+
+tr:hover {
+  background-color: #faf3eb;
+}
+
+/* ===== Empty State Text ===== */
+.empty-text {
+  color: #6b5a4a;
+  font-size: 14px;
+}
+
+/* ===== Code Blocks ===== */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+  color: #5c4033;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+/* ===== Scrollbar (optional but clean) ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf7f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4a484;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a67c52;
 }
